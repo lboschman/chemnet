@@ -1,18 +1,23 @@
-#include <string>;
-#include <cassert>;
+#include <string>
+#include <cassert>
 
 class ChemicalCompound
 {
     public:
-        ChemicalCompound(string name, float abundance=0.);
+        ChemicalCompound(std::string name, float abundance=0.);
 
-        string getName() {return name;}
+        std::string getName() {return name;}
 
         float getAbundance() {return abundance;}
     
     private:
-        string name;
+        std::string name;
         float abundance;
     
 
 };
+
+int main()
+{
+    return 0;
+}
